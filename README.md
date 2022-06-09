@@ -16,12 +16,14 @@ A library to scrape images from websites like Google, Getty and many more in the
 3. Install Dependencies
     ```
     pip install -r requirements.txt
-    ```
-4. Change certain configs in main.py
+    ```  
+4. Download the Chrome Webdriver
+    - Download from [here](https://chromedriver.chromium.org/downloads)  
+5. Change certain configs in main.py
     - **line 21** website_list[index] for the website you want to scrape from
     - **line 24** to add in the names of different objects you want to find
     - **line 27** for the number of images you want to scrape
-5. Run the code
+6. Run the code
     ```
     python main.py
     ```
