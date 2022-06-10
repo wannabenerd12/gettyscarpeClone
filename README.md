@@ -77,6 +77,8 @@ del image_scrapper
 [ ] Add in support for multiple image formats (e.g: jpg, png, jpeg) and reformat non-conventional image formats (webp, etc...)  
 
 ## Youtube Video:
-[![IMAGE ALT TEXT](https://github.com/ohyicong/Google-Image-Scraper/blob/master/youtube_thumbnail.PNG)](https://youtu.be/QZn_ZxpsIw4 "Google Image Scraper")
+[![IMAGE ALT TEXT](youtube_thumbnail.PNG)](https://youtu.be/QZn_ZxpsIw4 "Google Image Scraper")  
+
+Credits to ohyicong's initial [Google Image Scraper](https://github.com/ohyicong/Google-Image-Scraper.git)  
 =======
 
