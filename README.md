@@ -80,7 +80,7 @@ del image_scrapper
 
 ## Youtube Video:
 [![IMAGE ALT TEXT](youtube_thumbnail.PNG)](https://youtu.be/QZn_ZxpsIw4 "Google Image Scraper")  
+*Credits to ohyicong's initial [Google Image Scraper](https://github.com/ohyicong/Google-Image-Scraper.git)*  
 
-Credits to ohyicong's initial [Google Image Scraper](https://github.com/ohyicong/Google-Image-Scraper.git)  
 =======
 
