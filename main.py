@@ -20,13 +20,13 @@ if __name__ == "__main__":
 
     #Website used for scraping: 
     website_list = ['google', 'getty', 'shutterstock', 'bing']
-    search_site = website_list[0] #change index number here to select the website you are using
+    search_site = website_list[1] #change index number here to select the website you are using
 
     #Add new search key into array ["cat","t-shirt","apple","orange","pear","fish"]
-    search_keys= ['chinese cargo boat']
+    search_keys= ['liverpool jersey 2022']
 
     #Parameters
-    number_of_images = 1000
+    number_of_images = 100
     headless = False
     min_resolution=(0,0)
     max_resolution=(9999,9999)
