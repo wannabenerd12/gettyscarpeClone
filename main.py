@@ -15,8 +15,10 @@ from patch import webdriver_executable
 
 if __name__ == "__main__":
     #Define file path
-    webdriver_path = os.path.normpath(os.path.join(os.getcwd(), 'webdriver', webdriver_executable()))
-    image_path = os.path.normpath(os.path.join(os.getcwd(), 'photos'))
+    #webdriver_path = os.path.normpath(os.path.join(os.getcwd(), 'webdriver', webdriver_executable()))
+    webdriver_path = '/usr/bin/chromedriver'
+    #image_path = os.path.normpath(os.path.join(os.getcwd(), 'photos'))
+    image_path = '/kaggle/working/livjersey2022'
 
     #Website used for scraping: 
     website_list = ['google', 'getty', 'shutterstock', 'bing']
