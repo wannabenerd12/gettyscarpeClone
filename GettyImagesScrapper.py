@@ -36,7 +36,7 @@ class GettyImageScraper():
         options = Options()
         if(headless):
             options.add_argument('--headless')
-        driver = webdriver.Chrome(webdriver_path, chrome_options=options)
+        driver = webdriver.Chrome(webdriver_path, options=options)
         driver.set_window_size(1400,1050)
         driver.get("https://www.google.com")
         #check if chromedriver is updated
