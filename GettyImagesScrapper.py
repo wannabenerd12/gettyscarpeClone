@@ -33,6 +33,12 @@ class GettyImageScraper():
         if not os.path.exists(image_path):
             print("[INFO] Image path not found. Creating a new folder.")
             os.makedirs(image_path)
+        options = Options()
+        if(headless):
+            options.add_argument('--headless')
+        driver = webdriver.Chrome(webdriver_path, chrome_options=options)
+        driver.set_window_size(1400,1050)
+        driver.get("https://www.google.com")
         #check if chromedriver is updated
         '''
         while(True):
