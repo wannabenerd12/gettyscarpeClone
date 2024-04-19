@@ -17,7 +17,7 @@ def Main(driver_c):
     
     #Define file path
     #webdriver_path = os.path.normpath(os.path.join(os.getcwd(), 'webdriver', webdriver_executable()))
-    #webdriver_path = '/usr/bin/chromedriver'
+    webdriver_path = '/usr/bin/chromedriver'
     driver = driver_c
     #image_path = os.path.normpath(os.path.join(os.getcwd(), 'photos'))
     image_path = '/kaggle/working/livjersey2022'
@@ -41,7 +41,7 @@ def Main(driver_c):
         #if search_site == 'google':
             #image_scrapper = GoogleImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
         if search_site == 'getty':
-            image_scrapper = GettyImageScraper(driver,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
+            image_scrapper = GettyImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution,driver)
             #image_scrapper = GettyImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
         # if search_site == 'shutterstock':
             # image_scrapper = ShutterstockImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
