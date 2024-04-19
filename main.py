@@ -8,9 +8,9 @@ Created on Sun Jul 12 11:02:06 2020
 def Main(driver_c):
     #Import libraries
     import os
-    from GoogleImageScrapper import GoogleImageScraper
+    #from GoogleImageScrapper import GoogleImageScraper
     from GettyImagesScrapper import GettyImageScraper
-    from BingImageScrapper import BingImageScraper
+    #from BingImageScrapper import BingImageScraper
     # from ShutterstockImagesScrapper import ShutterstockImageScraper
     from patch import webdriver_executable
     
@@ -38,15 +38,15 @@ def Main(driver_c):
     #Main program
     #Choose if using Google, Getty or Shutterstock Images Scrapper
     for search_key in search_keys:
-        if search_site == 'google':
-            image_scrapper = GoogleImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
+        #if search_site == 'google':
+            #image_scrapper = GoogleImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
         if search_site == 'getty':
             image_scrapper = GettyImageScraper(driver,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
             #image_scrapper = GettyImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
         # if search_site == 'shutterstock':
             # image_scrapper = ShutterstockImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
-        if search_site == 'bing':
-            image_scrapper = BingImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
+        #if search_site == 'bing':
+            #image_scrapper = BingImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
         
         image_urls = image_scrapper.find_image_urls()
         image_scrapper.save_images(image_urls)
