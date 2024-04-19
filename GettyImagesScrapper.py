@@ -27,7 +27,7 @@ from PIL import Image
 import patch 
 
 class GettyImageScraper():
-    def __init__(self,webdriver_path,image_path, search_key="cat",number_of_images=1,headless=False,min_resolution=(0,0),max_resolution=(1920,1080)):
+    def __init__(self,driver,image_path, search_key="cat",number_of_images=1,headless=False,min_resolution=(0,0),max_resolution=(1920,1080)):
         #check parameter types
         image_path = os.path.join(image_path, search_key)
         if (type(number_of_images)!=int):
@@ -44,7 +44,7 @@ class GettyImageScraper():
         #driver.set_window_size(1400,1050)
         #driver.get("https://www.google.com")
         #check if chromedriver is updated
-
+'''
         while(True):
             try:
                 #try going to www.google.com
@@ -65,7 +65,7 @@ class GettyImageScraper():
                     is_patched = patch.download_lastest_chromedriver(driver.capabilities['version'])
                 if (not is_patched): 
                     exit("[ERR] Please update the chromedriver.exe in the webdriver folder according to your chrome version:https://chromedriver.chromium.org/downloads")
-           
+   '''        
         self.driver = driver
         self.search_key = search_key
         self.number_of_images = number_of_images
