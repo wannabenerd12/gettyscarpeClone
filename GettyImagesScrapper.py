@@ -69,7 +69,7 @@ class GettyImageScraper():
         self.driver = driver
         self.search_key = search_key
         self.number_of_images = number_of_images
-        self.webdriver_path = webdriver_path
+        #self.webdriver_path = webdriver_path
         self.image_path = image_path
         self.url = "https://www.gettyimages.com/search/2/image?family=creative&phrase=%s&page1"%(search_key)
         self.headless=headless
